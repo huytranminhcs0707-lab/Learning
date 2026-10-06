@@ -1,6 +1,8 @@
+package Day1;
+
 import java.util.Scanner;
 
-public class Day1 {
+public class CLI {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the first number: ");
@@ -20,7 +22,12 @@ public class Day1 {
             System.out.print(num1 * num2);
         }
         else{
-            System.out.print(num1/num2);
+            if (num2 == 0){
+                System.out.print("Error cannot divide by 0");
+            }
+            else{
+                System.out.print(num1/num2);
+            }
         }
 
     }
