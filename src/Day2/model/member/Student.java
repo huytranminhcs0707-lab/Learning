@@ -1,4 +1,13 @@
 package Day2.model.member;
 
-public class Student {
+public class Student extends Member{
+
+    public Student(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public int getMaxBorrowLimit() {
+        return 5;
+    }
 }
